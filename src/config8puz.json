@@ -1,0 +1,12 @@
+{
+    "model_params": {
+        "input_size": 784,
+        "hidden_layers": [256,256,9],
+        "output_size": 9,
+        "activation": "relu"
+    },
+    "training_params": {
+        "lr": 0.0005,
+        "epochs": 1
+    }
+}
