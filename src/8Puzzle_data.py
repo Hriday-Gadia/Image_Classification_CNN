@@ -57,10 +57,10 @@ def create_puzzle_dataset(num_samples=100, imbalance=False):
 # Create and save datasets
 os.makedirs("../src/Dataset/8Puzzle", exist_ok=True)
 
-puzzle_bal, labels_bal = create_puzzle_dataset(200, imbalance=False)
+puzzle_bal, labels_bal = create_puzzle_dataset(20000, imbalance=False)
 torch.save((puzzle_bal, labels_bal), "../src/Dataset/8Puzzle/8Puzzle_balanced.pt")
 
-puzzle_imbal, labels_imbal = create_puzzle_dataset(200, imbalance=True)
+puzzle_imbal, labels_imbal = create_puzzle_dataset(20000, imbalance=True)
 torch.save((puzzle_imbal, labels_imbal), "../src/Dataset/8Puzzle/8Puzzle_imbalanced.pt")
 
 # print("Saved 8Puzzle datasets with correct 9-digit labels.")
