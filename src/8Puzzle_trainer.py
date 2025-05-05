@@ -275,4 +275,4 @@ history3 = train_model(model2,imbal_data,imbal_label,training_params["lr"],train
 plot_metrics1(history3)
 history4 = test_model(model2,bal_data,bal_label,training_params["epochs"])
 plot_test1(history3)
-torch.save(model1.state_dict(), "modular_mlp_weights.pth")
+torch.save(model1.state_dict(), "../src/modular_mlp_weights.pth")
